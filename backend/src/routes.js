@@ -8,6 +8,9 @@ const routes = express.Router();
 // GET, POST, PUT, DELETE
 
 /**METHOD GET */
+routes.get("/teste", function(req, res){
+    return res.json({ok:true});
+});
 routes.get("/devs", DevController.index);
 
 /**METHOD POST */

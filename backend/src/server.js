@@ -11,8 +11,6 @@ mongoose.connect(
   { useNewUrlParser: true }
 );
 
-
-
 server.use(cors);
 server.use(express.json());
 server.use(routes);
